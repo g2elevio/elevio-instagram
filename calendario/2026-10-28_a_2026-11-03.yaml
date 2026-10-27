@@ -10,8 +10,8 @@ itens:
     pilar: educacao
     tema: "Landing page x site x Instagram: onde seu cliente deveria cair?"
     pasta: posts/2026-10-28-landing-site-instagram
-    status: revisar
-    publicacao: manual
+    status: aprovado
+    publicacao: api
   - data: 2026-10-28
     hora: "12:30"
     formato: story
