@@ -15,7 +15,7 @@
     { "tipo": "lista", "titulo": "O que ele faz *sozinho*:",
       "pontos": ["Responde em segundos, 24 horas", "Mostra os horários livres", "Marca e confirma a consulta"],
       "fala": "Ele responde em segundos, a qualquer hora, mostra os horários livres e marca e confirma a consulta." },
-    { "tipo": "cta", "kicker": "Vagas de lançamento até 03/11",
+    { "tipo": "cta", "kicker": "Atendimento 24 horas",
       "titulo": "Quer um desses *na sua clínica?*", "botao": "Diagnóstico grátis", "texto": "Link na bio",
       "fala": "A Elevio monta isso para a sua clínica. Peça seu diagnóstico gratuito pelo link da bio." }
   ]
