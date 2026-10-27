@@ -10,8 +10,10 @@ itens:
     pilar: educacao
     tema: "Landing page x site x Instagram: onde seu cliente deveria cair?"
     pasta: posts/2026-10-28-landing-site-instagram
-    status: aprovado
+    status: publicado
     publicacao: api
+    instagram_id: "18122135953820124"
+    link: https://www.instagram.com/p/DfALXQSnCJv/
   - data: 2026-10-28
     hora: "12:30"
     formato: story
@@ -23,7 +25,8 @@ itens:
     hora: "19:00"
     formato: reel
     pilar: demonstracao
-    tema: "Fiz um atendente de IA para uma clínica em 1 dia (tela do bot agendando consulta)"
+    tema: "Fiz um atendente de IA para uma clínica em 1 dia (tela do bot agendando
+      consulta)"
     status: rascunho
     pendencia: "Precisa da gravação de tela do bot demo."
     publicacao: manual
@@ -57,7 +60,8 @@ itens:
     hora: "12:00"
     formato: carrossel
     pilar: oferta
-    tema: "Quanto custa ter um bot de WhatsApp com IA? (faixas da tabela de lançamento)"
+    tema: "Quanto custa ter um bot de WhatsApp com IA? (faixas da tabela de
+      lançamento)"
     status: rascunho
     pendencia: "Usar só os preços da nota Catalogo de servicos e precos."
     publicacao: manual
@@ -77,7 +81,8 @@ itens:
     hora: "19:00"
     formato: reel
     pilar: oferta
-    tema: "Último dia das vagas de lançamento (texto na tela sobre o vídeo do bot, 20s)"
+    tema: "Último dia das vagas de lançamento (texto na tela sobre o vídeo do bot,
+      20s)"
     status: rascunho
     pendencia: "Precisa do vídeo do bot demo."
     publicacao: manual
