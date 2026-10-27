@@ -4,14 +4,14 @@
 # Stories com figurinha (enquete, caixa de perguntas, contagem regressiva) são sempre manuais: a API não aceita figurinhas.
 semana: 2026-10-28 a 2026-11-03
 itens:
-  - data: 2026-10-28
+  - data: 2026-10-27
     hora: "12:00"
     formato: carrossel
     pilar: educacao
     tema: "Landing page x site x Instagram: onde seu cliente deveria cair?"
     pasta: posts/2026-10-28-landing-site-instagram
-    status: revisar
-    publicacao: manual
+    status: aprovado
+    publicacao: api
   - data: 2026-10-28
     hora: "12:30"
     formato: story
