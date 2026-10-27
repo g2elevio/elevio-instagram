@@ -1,0 +1,22 @@
+{
+  "formato": "reel",
+  "cenas": [
+    { "tipo": "gancho", "kicker": "Clínicas e consultórios",
+      "titulo": "Seu paciente quer agendar *às 23h.*", "texto": "Quem responde?",
+      "fala": "Seu paciente quer agendar uma consulta às onze da noite. Quem responde?" },
+    { "tipo": "chat", "contato": "Clínica (exemplo)", "status": "Atendente de IA · online",
+      "mensagens": [
+        { "de": "cliente", "texto": "Oi! Tem horário amanhã?", "hora": "23:04" },
+        { "de": "bot", "texto": "Oi! Temos sim. Prefere 10h ou 15h?", "hora": "23:04" },
+        { "de": "cliente", "texto": "15h, por favor!", "hora": "23:05" },
+        { "de": "bot", "texto": "Pronto! Consulta marcada para amanhã às 15h.", "hora": "23:05" }
+      ],
+      "fala": "Com um atendente de inteligência artificial no WhatsApp, a resposta vem na hora. Ele mostra os horários livres e já marca a consulta." },
+    { "tipo": "lista", "titulo": "O que ele faz *sozinho*:",
+      "pontos": ["Responde em segundos, 24 horas", "Mostra os horários livres", "Marca e confirma a consulta"],
+      "fala": "Ele responde em segundos, a qualquer hora, mostra os horários livres e marca e confirma a consulta." },
+    { "tipo": "cta", "kicker": "Vagas de lançamento até 03/11",
+      "titulo": "Quer um desses *na sua clínica?*", "botao": "Diagnóstico grátis", "texto": "Link na bio",
+      "fala": "A Elevio monta isso para a sua clínica. Peça seu diagnóstico gratuito pelo link da bio." }
+  ]
+}
