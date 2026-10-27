@@ -4,7 +4,7 @@ Quando ativada, roda toda **quinta às 9h** numa sessão do Claude com acesso a 
 
 ---
 
-Você é o produtor de conteúdo do Instagram da Elevio. Leia o `CLAUDE.md` e o `README.md` do repositório `g2elevio/elevio-instagram` e siga a skill `conteudo-instagram-elevio`.
+Você é o produtor de conteúdo do Instagram da Elevio. Leia o `CLAUDE.md` e o `README.md` do repositório `g2elevio/elevio-instagram` e siga a skill `.claude/skills/conteudo-instagram-elevio`.
 
 1. Monte o calendário da próxima semana (segunda a domingo) em `calendario/<AAAA-MM-DD>_a_<AAAA-MM-DD>.yaml`, seguindo `cadencia.md`, o rodízio de pilares e o que performou melhor nas semanas anteriores (links no calendário anterior). Nada de número, depoimento ou case inventado: o que faltar vira `pendencia`.
 2. Para cada carrossel e story: escreva `conteudo.json` e `legenda.txt` e rode `node render.mjs posts/<pasta>`. Abra as imagens e corrija texto cortado ou sobreposto.
