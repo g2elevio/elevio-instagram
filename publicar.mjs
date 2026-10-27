@@ -115,6 +115,11 @@ for (const arq of readdirSync('calendario').filter(a => a.endsWith('.yaml'))) {
   for (const item of doc.get('itens').items) {
     if (item.get('status') !== 'aprovado' || item.get('publicacao') !== 'api' || item.get('interativo')) continue;
     if (quando(item) > agora) continue;
+    // Reel aprovado mas ainda sem voz: espera a narração em vez de marcar erro.
+    if (item.get('formato') === 'reel' && !existsSync(`${item.get('pasta')}/narracao.wav`)) {
+      console.warn(`Aguardando narração: ${item.get('data')} ${item.get('tema')}`);
+      continue;
+    }
     const nome = `${item.get('data')} ${item.get('formato')}: ${item.get('tema')}`;
     if (TESTE) { console.log(`[teste] publicaria ${nome} (${midias(item).length} arquivo(s))`); continue; }
     try {
