@@ -1,0 +1,14 @@
+{
+  "name": "elevio-instagram",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "render": "node render.mjs",
+    "publicar": "node publicar.mjs",
+    "publicar:teste": "node publicar.mjs --teste"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  }
+}

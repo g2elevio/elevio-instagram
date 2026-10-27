@@ -1,0 +1,25 @@
+name: Renovar token do Instagram
+
+# O token de longa duração vale 60 dias. Renovar toda segunda mantém ele sempre válido.
+on:
+  schedule:
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+jobs:
+  renovar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pedir token novo e gravar no segredo IG_TOKEN
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+        run: |
+          resp=$(curl -sS --get "https://graph.instagram.com/refresh_access_token" \
+            --data-urlencode "grant_type=ig_refresh_token" \
+            --data-urlencode "access_token=$IG_TOKEN")
+          novo=$(echo "$resp" | jq -r '.access_token // empty')
+          if [ -z "$novo" ]; then echo "Falhou: $(echo "$resp" | jq -c '.error.message // .')"; exit 1; fi
+          echo "::add-mask::$novo"
+          gh secret set IG_TOKEN --repo "$GITHUB_REPOSITORY" --body "$novo"
+          echo "Token renovado. Vale por mais $(( $(echo "$resp" | jq -r '.expires_in') / 86400 )) dias."
