@@ -20,6 +20,7 @@ Repositório `g2elevio/elevio-instagram`. Leia `README.md` e `CLAUDE.md` antes d
 - Público: donos de pequenos negócios que atendem pelo WhatsApp. Tom próximo, direto, sem jargão. Cada peça mostra um problema concreto e termina com CTA para o diagnóstico gratuito.
 - Pilares: dor 30%, demonstração 25%, educação 20%, bastidores 15%, oferta 10%.
 - **Sem oferta com prazo ou vagas** ("vagas de lançamento", "até dia X", desconto por tempo limitado). A oferta de lançamento de 03/11 foi retirada em 27/10; só volta se os sócios definirem uma nova oferta por escrito. CTA padrão: diagnóstico gratuito pelo link da bio.
+- **Sem número de telefone/WhatsApp** em imagem, vídeo ou legenda: o número atual do site é provisório. Contato só por "link na bio" (inclusive em `rodape_cta`). Não copiar o rodapé do carrossel de 27/10, que ainda tem o número antigo.
 - **Nunca inventar números, depoimentos, logos ou cases.** Número sem fonte vira `pendencia`. Preços só da nota `pesquisas/Catalogo de servicos e precos.md` do vault. Conversas de exemplo marcadas como exemplo.
 - Sem rosto do usuário: tela, texto na tela e narração de IA.
 - Sem emoji dentro das imagens; emoji só na legenda. Legenda com pergunta para comentários e 6 a 8 hashtags em português.
