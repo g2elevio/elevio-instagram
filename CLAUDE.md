@@ -3,6 +3,7 @@
 - Responder e escrever em **português**. Na narração, escrever "Eleví-o".
 - Leia o `README.md` antes de mexer. Posts novos seguem o padrão de `posts/` e do calendário; nunca editar o template por post.
 - **Nunca publicar** item que não esteja com `status: aprovado` dado pelo usuário. Publicar é ação pública: não rodar `publicar.mjs` sem `--teste` fora do GitHub Actions.
+- **Sem oferta com prazo ou vagas** até os sócios definirem uma nova (a de lançamento até 03/11 foi retirada).
 - **Nunca inventar números, depoimentos, logos ou cases.** Número sem fonte vira `pendencia` no calendário.
 - Token e chaves só nos segredos do GitHub Actions, nunca no repositório, em logs ou no chat.
 - Voz: sempre no PC com a RTX 3060, VoiceStudio + VoxCPM2, perfil "Elevio - locutor oficial" (`docs/voz-no-pc.md`). Nunca publicar reel sem `narracao.wav`.
