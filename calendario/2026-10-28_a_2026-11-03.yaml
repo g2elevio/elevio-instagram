@@ -1,0 +1,83 @@
+# Calendário da semana 2 do plano de lançamento (https://claude.ai/artifact/3ERDgwi5vcXmiBfjgiTEEH).
+# status: rascunho | revisar | aprovado | publicado
+# publicacao: manual (fase 1) | api (fase 2, quando a publicação automática estiver ligada)
+# Stories com figurinha (enquete, caixa de perguntas, contagem regressiva) são sempre manuais: a API não aceita figurinhas.
+semana: 2026-10-28 a 2026-11-03
+itens:
+  - data: 2026-10-28
+    hora: "12:00"
+    formato: carrossel
+    pilar: educacao
+    tema: "Landing page x site x Instagram: onde seu cliente deveria cair?"
+    pasta: posts/2026-10-28-landing-site-instagram
+    status: revisar
+    publicacao: manual
+  - data: 2026-10-28
+    hora: "12:30"
+    formato: story
+    tema: "Chamada para o carrossel novo"
+    pasta: posts/2026-10-28-story-chamada
+    status: revisar
+    publicacao: manual
+  - data: 2026-10-29
+    hora: "19:00"
+    formato: reel
+    pilar: demonstracao
+    tema: "Fiz um atendente de IA para uma clínica em 1 dia (tela do bot agendando consulta)"
+    status: rascunho
+    pendencia: "Precisa da gravação de tela do bot demo."
+    publicacao: manual
+  - data: 2026-10-29
+    formato: story
+    tema: "Enquete: Quer um desses no seu negócio?"
+    interativo: true
+    publicacao: manual
+  - data: 2026-10-30
+    hora: "12:00"
+    formato: carrossel
+    pilar: dor
+    tema: "Quanto custa responder 100 mensagens por dia? Atendente x bot"
+    status: rascunho
+    pendencia: "Precisa de fonte real para salário e encargos (não inventar números)."
+    publicacao: manual
+  - data: 2026-10-30
+    formato: story
+    tema: "Caixa: Me conta seu negócio que eu digo o que automatizar"
+    interativo: true
+    publicacao: manual
+  - data: 2026-10-31
+    hora: "19:00"
+    formato: reel
+    pilar: bastidores
+    tema: "Um dia construindo automações (time-lapse da tela + narração)"
+    status: rascunho
+    pendencia: "Precisa de gravação de tela real."
+    publicacao: manual
+  - data: 2026-11-01
+    hora: "12:00"
+    formato: carrossel
+    pilar: oferta
+    tema: "Quanto custa ter um bot de WhatsApp com IA? (faixas da tabela de lançamento)"
+    status: rascunho
+    pendencia: "Usar só os preços da nota Catalogo de servicos e precos."
+    publicacao: manual
+  - data: 2026-11-01
+    formato: story
+    tema: "Contagem regressiva: faltam 2 dias"
+    interativo: true
+    publicacao: manual
+  - data: 2026-11-02
+    hora: "12:00"
+    formato: carrossel
+    pilar: educacao
+    tema: "3 automações gratuitas que todo pequeno negócio deveria ligar hoje"
+    status: rascunho
+    publicacao: manual
+  - data: 2026-11-03
+    hora: "19:00"
+    formato: reel
+    pilar: oferta
+    tema: "Último dia das vagas de lançamento (texto na tela sobre o vídeo do bot, 20s)"
+    status: rascunho
+    pendencia: "Precisa do vídeo do bot demo."
+    publicacao: manual

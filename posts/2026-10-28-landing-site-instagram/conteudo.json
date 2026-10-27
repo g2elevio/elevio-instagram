@@ -1,0 +1,32 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio · (45) 99996-8287",
+  "slides": [
+    { "tipo": "capa", "kicker": "Antes de investir em anúncio",
+      "titulo": "Landing page, site ou Instagram: *onde seu cliente deveria cair?*",
+      "subtitulo": "Cada um tem uma função. Misturar custa clientes." },
+    { "tipo": "item", "numero": "01", "titulo": "Instagram é a vitrine.",
+      "texto": "É onde as pessoas te descobrem e passam a confiar em você. Mas o link fica escondido na bio e a conversa se perde no direct.",
+      "pontos": ["Bom para: ser descoberto e mostrar trabalho", "Fraco em: explicar a oferta e captar contato"] },
+    { "tipo": "item", "numero": "02", "titulo": "Landing page é o balcão.",
+      "texto": "Uma página, uma oferta, um botão. Quem chega do anúncio ou do link da bio sabe exatamente o que fazer.",
+      "pontos": ["Bom para: transformar visita em conversa no WhatsApp", "Fraco em: apresentar muitos serviços de uma vez"] },
+    { "tipo": "item", "numero": "03", "titulo": "Site é a loja inteira.",
+      "texto": "Várias páginas: serviços, sobre, contato, blog. Passa credibilidade e aparece no Google quando alguém procura o que você faz.",
+      "pontos": ["Bom para: busca no Google e empresas com vários serviços", "Fraco em: campanha de uma oferta só (o cliente se perde nos menus)"] },
+    { "tipo": "comparativo", "titulo": "Então, para onde mandar cada cliente?",
+      "colunas": [
+        { "nome": "Instagram", "tag": "Descoberta", "pontos": ["Quem ainda não te conhece", "Conteúdo e bastidores"] },
+        { "nome": "Landing page", "tag": "Conversão", "destaque": true, "pontos": ["Quem veio do anúncio", "Quem clicou no link da bio"] },
+        { "nome": "Site", "tag": "Credibilidade", "pontos": ["Quem te achou no Google", "Quem quer conhecer tudo"] }
+      ],
+      "solucao": "*O caminho que funciona:* o Instagram atrai, a landing page converte e o WhatsApp fecha." },
+    { "tipo": "item", "titulo": "O erro mais comum:",
+      "texto": "Mandar o anúncio para o perfil do Instagram ou para a página inicial do site. O cliente precisa procurar o que fazer, e quem precisa procurar desiste.",
+      "solucao": "*Com a Elevio:* landing page rápida, com botão direto para o seu WhatsApp." },
+    { "tipo": "cta", "pre": "Não sabe qual é o seu caso?",
+      "titulo": "A gente analisa com você, *de graça.*",
+      "texto": "Diagnóstico gratuito de 20 minutos. Vagas de lançamento até 03/11.",
+      "botao": "Peça seu diagnóstico →" }
+  ]
+}
