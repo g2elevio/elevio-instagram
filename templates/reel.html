@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=block" rel="stylesheet">
+<!--
+  Template de reel da Elevio (1080x1920), renderizado quadro a quadro pelo reel.mjs.
+  Não editar por post: as cenas vêm do conteudo.json (formato "reel").
+  Tipos de cena: gancho, texto, lista, chat, cta. Destaque em gradiente com *asteriscos*.
+  window.montar(dados, tempos) monta as cenas; window.render(t) desenha o instante t (segundos).
+-->
+<style>
+:root{--bg:#070b16;--cyan:#22d3ee;--blue:#4f6cf5;--purple:#7c3aed;--text:#eef1f8;--muted:#9aa3b8;--line:#232d48;--red:#f43f5e;--green:#22c55e}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+body{font-family:Manrope,Inter,sans-serif;color:var(--text)}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;
+  background:radial-gradient(900px 700px at 20% 15%,#16214a 0%,transparent 70%),radial-gradient(800px 800px at 90% 85%,#24124a 0%,transparent 70%),var(--bg)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:90px 90px}
+.progress{position:absolute;left:0;top:0;height:8px;background:linear-gradient(90deg,var(--cyan),var(--purple))}
+.header{position:absolute;left:88px;top:120px;display:flex;align-items:center;gap:20px;font-size:52px;font-weight:700}
+.grad{background:linear-gradient(90deg,var(--cyan),var(--blue) 55%,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cena{position:absolute;inset:0;opacity:0}
+.corpo{position:absolute;left:88px;right:88px;top:300px;bottom:280px;display:flex;flex-direction:column;justify-content:center;gap:48px}
+.a{will-change:transform,opacity}
+.kicker{color:var(--cyan);font-size:40px;font-weight:700}
+h1{font-size:118px;line-height:1.02;font-weight:800;letter-spacing:-3px}
+h2{font-size:86px;line-height:1.06;font-weight:800;letter-spacing:-2px}
+.d{font-size:46px;line-height:1.35;color:var(--muted);font-weight:500}
+.bars{position:absolute;right:-60px;bottom:-40px;width:620px;height:620px}
+.pontos{display:flex;flex-direction:column;gap:30px}
+.ponto{display:flex;gap:28px;align-items:center;padding:34px 40px;border-radius:34px;background:linear-gradient(160deg,#18213a,#0f1628);border:2px solid var(--line);font-size:46px;font-weight:700;line-height:1.2}
+.ponto b{flex:none;width:72px;height:72px;border-radius:22px;background:linear-gradient(135deg,var(--cyan),var(--purple));display:flex;align-items:center;justify-content:center;font-size:36px;color:#fff}
+.phone{align-self:center;width:820px;border-radius:64px;background:#0b1222;border:3px solid #2a3554;box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 0 12px #0d1428;overflow:hidden;padding-bottom:30px}
+.ph-head{height:150px;background:#111b31;display:flex;align-items:center;gap:24px;padding:30px 40px 0;border-bottom:2px solid #1c2741}
+.avatar{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,#f0abfc,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:34px}
+.ph-name{font-size:36px;font-weight:700}.ph-sub{font-size:26px;color:var(--muted);margin-top:4px}
+.msgs{padding:36px 36px 0;display:flex;flex-direction:column;gap:24px}
+.msg{max-width:600px;padding:24px 30px 16px;border-radius:30px;font-size:36px;line-height:1.3;font-weight:500}
+.msg .h{font-size:22px;color:rgba(255,255,255,.55);text-align:right;margin-top:8px}
+.cliente{background:#1d2740;border-top-left-radius:8px;align-self:flex-start}
+.bot{background:linear-gradient(135deg,#1f4fd8,#5b3bd6);border-top-right-radius:8px;align-self:flex-end}
+.cta .corpo{align-items:center;text-align:center}
+.btn{padding:42px 72px;border-radius:999px;font-size:52px;font-weight:800;white-space:nowrap;background:linear-gradient(90deg,var(--cyan),var(--blue) 55%,var(--purple));box-shadow:0 20px 80px rgba(79,108,245,.55)}
+.sub{font-size:40px;color:var(--muted);font-weight:600}
+</style></head><body>
+<div id="stage"><div class="grid"></div><div id="cenas"></div>
+  <div class="header" id="header"></div><div class="progress" id="progress"></div></div>
+<template id="logo"><svg width="64" height="64" viewBox="290 270 500 540"><polygon points="380,270 790,270 695,380 400,380 400,470 290,560 290,380" fill="#22d3ee"/><polygon points="500,480 740,480 640,590 500,590" fill="#4f6cf5"/><polygon points="290,695 500,480 500,590 395,695" fill="#2d3aa0"/><polygon points="290,695 790,695 685,810 290,810" fill="#7c3aed"/></svg></template>
+<script>
+const LOGO = document.getElementById('logo').innerHTML;
+const BARS = '<svg class="bars" viewBox="0 0 620 620"><polygon class="a" data-in="0.2" points="420,0 620,0 620,40 460,180 260,180" fill="#22d3ee"/><polygon class="a" data-in="0.35" points="300,210 620,210 620,250 470,400 140,400" fill="#4f6cf5"/><polygon class="a" data-in="0.5" points="160,430 620,430 620,470 470,620 0,620" fill="#7c3aed"/></svg>';
+document.getElementById('header').innerHTML = LOGO + 'Elevio';
+
+function txt(s) {
+  const esc = String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  return esc.replace(/\*([^*]+)\*/g, '<span class="grad">$1</span>').replace(/\n/g, '<br>');
+}
+// data-in = segundos depois do início da cena em que o elemento entra.
+const el = (tag, cls, html, inicio) => `<${tag} class="a ${cls}" data-in="${inicio}">${html}</${tag}>`;
+
+// Itens em sequência (lista, chat) se espalham pela primeira metade e pouco da cena.
+const escalonar = (i, n, dur) => 0.5 + i * Math.min(1.4, (dur * 0.65) / Math.max(n, 1));
+
+const tipos = {
+  gancho: (c) => `${BARS}<div class="corpo">
+      ${c.kicker ? el('div', 'kicker', txt(c.kicker), 0) : ''}
+      ${el('h1', '', txt(c.titulo), 0.1)}
+      ${c.texto ? el('p', 'd', txt(c.texto), 0.5) : ''}</div>`,
+  texto: (c) => `<div class="corpo">
+      ${c.kicker ? el('div', 'kicker', txt(c.kicker), 0) : ''}
+      ${el('h2', '', txt(c.titulo), 0.1)}
+      ${c.texto ? el('p', 'd', txt(c.texto), 0.5) : ''}</div>`,
+  lista: (c, dur) => `<div class="corpo">
+      ${el('h2', '', txt(c.titulo), 0)}
+      <div class="pontos">${c.pontos.map((p, i) =>
+        el('div', 'ponto', `<b>${i + 1}</b><span>${txt(p)}</span>`, escalonar(i, c.pontos.length, dur))).join('')}</div></div>`,
+  chat: (c, dur) => `<div class="corpo">
+      ${c.titulo ? el('h2', '', txt(c.titulo), 0) : ''}
+      <div class="phone a" data-in="0.15"><div class="ph-head"><div class="avatar">${txt((c.contato ?? 'C')[0])}</div>
+        <div><div class="ph-name">${txt(c.contato ?? 'Cliente')}</div><div class="ph-sub">${txt(c.status ?? 'online')}</div></div></div>
+        <div class="msgs">${c.mensagens.map((m, i) =>
+          el('div', `msg ${m.de === 'bot' ? 'bot' : 'cliente'}`, `${txt(m.texto)}${m.hora ? `<div class="h">${txt(m.hora)}</div>` : ''}`,
+             escalonar(i, c.mensagens.length, dur))).join('')}</div></div></div>`,
+  cta: (c) => `<div class="corpo">
+      <div class="a" data-in="0">${LOGO.replace('width="64" height="64"', 'width="300" height="320"')}</div>
+      ${c.kicker ? el('div', 'kicker', txt(c.kicker), 0.2) : ''}
+      ${el('h2', '', txt(c.titulo), 0.3)}
+      ${c.botao ? el('div', 'btn', txt(c.botao), 0.7) : ''}
+      ${c.texto ? el('div', 'sub', txt(c.texto), 1.0) : ''}</div>`,
+};
+
+let cenas = [], total = 0;
+window.montar = function (dados, tempos) {
+  let t = 0;
+  cenas = dados.cenas.map((c, i) => {
+    if (!tipos[c.tipo]) throw new Error('Tipo de cena desconhecido: ' + c.tipo);
+    const cena = { inicio: t, dur: tempos[i], tipo: c.tipo };
+    t += tempos[i];
+    return { ...cena, html: `<section class="cena ${c.tipo}" id="c${i}">${tipos[c.tipo](c, tempos[i])}</section>` };
+  });
+  total = t;
+  document.getElementById('cenas').innerHTML = cenas.map(c => c.html).join('');
+  cenas.forEach((c, i) => { c.no = document.getElementById('c' + i); c.anim = [...c.no.querySelectorAll('.a')]; });
+};
+
+const suave = x => 1 - Math.pow(1 - Math.min(Math.max(x, 0), 1), 3);
+window.render = function (t) {
+  document.getElementById('progress').style.width = `${Math.min(t / total, 1) * 1080}px`;
+  for (const c of cenas) {
+    const lt = t - c.inicio;
+    const ativa = lt >= -0.001 && lt < c.dur;
+    // Troca de cena com fade curto na saída.
+    const ultima = c === cenas[cenas.length - 1];
+    c.no.style.opacity = !ativa ? '0' : ultima ? '1' : String(Math.min(1, (c.dur - lt) / 0.25));
+    if (!ativa) continue;
+    for (const a of c.anim) {
+      const p = suave((lt - parseFloat(a.dataset.in || 0)) / 0.45);
+      a.style.opacity = String(p);
+      a.style.transform = `translateY(${(1 - p) * 40}px)`;
+    }
+  }
+};
+</script>
+</body></html>

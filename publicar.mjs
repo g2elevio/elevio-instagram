@@ -55,6 +55,9 @@ async function publicar(igId, item) {
   const formato = item.get('formato');
   const lista = midias(item);
   const caption = legendaDe(item);
+  // Rótulo "Informações de IA": obrigatório em vídeo/áudio realista feito com IA. Reel tem narração de IA,
+  // então vem ligado por padrão; outros formatos só com "ia: true" no calendário.
+  const ia = (item.get('ia') ?? formato === 'reel') ? { is_ai_generated: 'true' } : {};
   let criacao;
 
   if (formato === 'carrossel') {
@@ -66,17 +69,22 @@ async function publicar(igId, item) {
       if (m.video) await aguardarContainer(id);
       filhos.push(id);
     }
-    ({ id: criacao } = await ig(`${igId}/media`, { media_type: 'CAROUSEL', children: filhos.join(','), caption }, 'POST'));
+    ({ id: criacao } = await ig(`${igId}/media`, { media_type: 'CAROUSEL', children: filhos.join(','), caption, ...ia }, 'POST'));
   } else if (formato === 'reel') {
     const video = lista.find(m => m.video);
     if (!video) throw new Error('Reel sem arquivo .mp4.');
-    ({ id: criacao } = await ig(`${igId}/media`, { media_type: 'REELS', video_url: video.url, caption, share_to_feed: 'true' }, 'POST'));
+    // Sem narracao.wav na pasta, o reel.mp4 é só a prévia muda: nunca publicar.
+    if (!existsSync(`${item.get('pasta')}/narracao.wav`)) throw new Error('Reel sem narração (prévia muda).');
+    const p = { media_type: 'REELS', video_url: video.url, caption, share_to_feed: 'true', ...ia };
+    const capa = lista.find(m => m.url.endsWith('/capa-previa.jpg'));
+    if (capa) p.cover_url = capa.url;
+    ({ id: criacao } = await ig(`${igId}/media`, p, 'POST'));
   } else if (formato === 'story') {
     const m = lista[0];
     const p = m.video ? { video_url: m.url } : { image_url: m.url };
-    ({ id: criacao } = await ig(`${igId}/media`, { media_type: 'STORIES', ...p }, 'POST'));
+    ({ id: criacao } = await ig(`${igId}/media`, { media_type: 'STORIES', ...p, ...ia }, 'POST'));
   } else if (formato === 'imagem') {
-    ({ id: criacao } = await ig(`${igId}/media`, { image_url: lista[0].url, caption }, 'POST'));
+    ({ id: criacao } = await ig(`${igId}/media`, { image_url: lista[0].url, caption, ...ia }, 'POST'));
   } else {
     throw new Error(`Formato desconhecido: ${formato}`);
   }
@@ -123,6 +131,6 @@ for (const arq of readdirSync('calendario').filter(a => a.endsWith('.yaml'))) {
     }
     mudou = true;
   }
-  if (mudou) writeFileSync(caminho, doc.toString());
+  if (mudou) writeFileSync(caminho, doc.toString({ lineWidth: 0 }));
 }
 if (falhas) process.exitCode = 1;

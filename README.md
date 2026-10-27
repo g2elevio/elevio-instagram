@@ -8,6 +8,9 @@ Pipeline para gerar os posts da Elevio em código. Pesquisa e arquitetura no vau
 - `templates/elevio.html`: identidade visual (cores, Manrope, logo). Tipos de slide: `capa`, `item`, `comparativo`, `cta`, `story`, `story-cta`. Destaque em gradiente com `*asteriscos*`.
 - `render.mjs`: gera as imagens em JPEG (formato exigido pela API do Instagram).
 - `cadencia.md`: ritmo semanal proposto.
+- `reel.mjs` + `templates/reel.html`: gera o `reel.mp4` (1080x1920, H.264 + AAC) a partir das cenas do `conteudo.json` (tipos `gancho`, `texto`, `lista`, `chat`, `cta`). Com `narracao.wav` na pasta, as cenas acompanham a voz; sem ela, sai uma prévia muda. Também gera `capa-previa.jpg`, usada como capa do reel.
+- `narrar.mjs` + `roteiro.mjs`: pede a narração ao VoiceStudio (sempre VoxCPM2). Ver `docs/voz-no-pc.md`.
+- `rotina-semanal.md`: prompt da tarefa do Claude que monta a semana toda quinta.
 - `publicar.mjs`: publica pela API oficial do Instagram os itens `aprovado` + `publicacao: api` cujo horário (Brasília) já chegou, e grava no calendário o status, o id e o link.
 - `.github/workflows/publicar.yml`: roda o `publicar.mjs` de hora em hora (e manualmente, com a opção "Só conferir").
 - `.github/workflows/renovar-token.yml`: renova o token toda segunda (ele vale 60 dias).
@@ -18,6 +21,15 @@ npm install
 node render.mjs posts/2026-10-28-landing-site-instagram
 ```
 Carrossel sai em 1080×1350 e story em 1080×1920.
+
+## Gerar um reel
+```
+node reel.mjs posts/2026-10-29-reel-agendamento-23h      # prévia muda
+# narração no PC (docs/voz-no-pc.md) → posts/<pasta>/narracao.wav
+node reel.mjs posts/2026-10-29-reel-agendamento-23h      # versão final, com voz
+```
+Trilha opcional: `"trilha": "audio/<arquivo>.mp3"` no `conteudo.json` (só música livre de direitos), mixada baixo sob a voz.
+Reels saem com o rótulo "Informações de IA" (`is_ai_generated`), porque a narração é de IA.
 
 ## Configuração da publicação automática (uma vez só)
 Em **Settings → Secrets and variables → Actions** do repositório:

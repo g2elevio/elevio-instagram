@@ -25,11 +25,11 @@ itens:
     hora: "19:00"
     formato: reel
     pilar: demonstracao
-    tema: "Fiz um atendente de IA para uma clínica em 1 dia (tela do bot agendando
-      consulta)"
-    status: rascunho
-    pendencia: "Precisa da gravação de tela do bot demo."
+    tema: "Seu paciente quer agendar às 23h: atendente de IA marcando consulta (conversa animada)"
+    status: revisar
+    pendencia: "Narração no VoiceStudio do PC (node narrar.mjs) e depois node reel.mjs."
     publicacao: manual
+    pasta: posts/2026-10-29-reel-agendamento-23h
   - data: 2026-10-29
     formato: story
     tema: "Enquete: Quer um desses no seu negócio?"
@@ -60,8 +60,7 @@ itens:
     hora: "12:00"
     formato: carrossel
     pilar: oferta
-    tema: "Quanto custa ter um bot de WhatsApp com IA? (faixas da tabela de
-      lançamento)"
+    tema: "Quanto custa ter um bot de WhatsApp com IA? (faixas da tabela de lançamento)"
     status: rascunho
     pendencia: "Usar só os preços da nota Catalogo de servicos e precos."
     publicacao: manual
@@ -81,8 +80,7 @@ itens:
     hora: "19:00"
     formato: reel
     pilar: oferta
-    tema: "Último dia das vagas de lançamento (texto na tela sobre o vídeo do bot,
-      20s)"
+    tema: "Último dia das vagas de lançamento (texto na tela sobre o vídeo do bot, 20s)"
     status: rascunho
     pendencia: "Precisa do vídeo do bot demo."
     publicacao: manual
