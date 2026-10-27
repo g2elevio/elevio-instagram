@@ -27,8 +27,7 @@ itens:
     pilar: demonstracao
     tema: "Seu paciente quer agendar às 23h: atendente de IA marcando consulta (conversa animada)"
     status: revisar
-    pendencia: "Narração no VoiceStudio do PC (node narrar.mjs) e depois node reel.mjs."
-    publicacao: manual
+    publicacao: api
     pasta: posts/2026-10-29-reel-agendamento-23h
   - data: 2026-10-29
     formato: story
