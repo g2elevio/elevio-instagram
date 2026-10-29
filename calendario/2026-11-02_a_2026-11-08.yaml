@@ -1,0 +1,60 @@
+# Calendário da semana de 02 a 08/11, montado pela rotina de quinta (29/10).
+# Os itens de 02 e 03/11 continuam no calendário 2026-10-28_a_2026-11-03.yaml (não duplicar).
+# status: rascunho | revisar | aprovado | publicado
+# Stories com figurinha (enquete, caixa de perguntas) são sempre manuais: a API não aceita figurinhas.
+semana: 2026-11-02 a 2026-11-08
+itens:
+  - data: 2026-11-04
+    hora: "19:00"
+    formato: reel
+    pilar: demonstracao
+    tema: "De onde veio seu último cliente? Origem marcada em cada contato (CRM)"
+    pasta: posts/2026-11-04-reel-origem-do-cliente
+    status: revisar
+    pendencia: "Narração no VoiceStudio do PC."
+    publicacao: api
+  - data: 2026-11-04
+    formato: story
+    tema: "Enquete: Você sabe de onde vem cada cliente seu? (Sim / Não faço ideia)"
+    pasta: posts/2026-11-04-story-enquete
+    status: revisar
+    interativo: true
+    publicacao: manual
+  - data: 2026-11-06
+    hora: "12:00"
+    formato: carrossel
+    pilar: dor
+    tema: "5 sinais de que seu WhatsApp está perdendo clientes"
+    pasta: posts/2026-11-06-whatsapp-perdendo-clientes
+    status: revisar
+    publicacao: api
+  - data: 2026-11-06
+    hora: "12:30"
+    formato: story
+    tema: "Chamada para o carrossel dos 5 sinais"
+    pasta: posts/2026-11-06-story-chamada
+    status: revisar
+    publicacao: api
+  - data: 2026-11-07
+    hora: "19:00"
+    formato: reel
+    pilar: bastidores
+    tema: "Nosso Instagram se posta sozinho (a própria automação)"
+    pasta: posts/2026-11-07-reel-bastidor-automacao
+    status: revisar
+    pendencia: "Narração no VoiceStudio do PC."
+    publicacao: api
+  - data: 2026-11-07
+    formato: story
+    tema: "Caixa: Que tarefa você queria nunca mais fazer?"
+    pasta: posts/2026-11-07-story-caixa
+    status: revisar
+    interativo: true
+    publicacao: manual
+  - data: 2026-11-08
+    hora: "12:00"
+    formato: story
+    tema: "Bastidor da semana: nosso CRM já está no ar"
+    pasta: posts/2026-11-08-story-bastidor-crm
+    status: revisar
+    publicacao: api
