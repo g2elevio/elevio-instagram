@@ -26,9 +26,11 @@ itens:
     formato: reel
     pilar: demonstracao
     tema: "Seu paciente quer agendar às 23h: atendente de IA marcando consulta (conversa animada)"
-    status: aprovado
+    status: publicado
     publicacao: api
     pasta: posts/2026-10-29-reel-agendamento-23h
+    instagram_id: "17971197960192640"
+    link: https://www.instagram.com/reel/DfGEcl5j690/
   - data: 2026-10-29
     formato: story
     tema: "Enquete: Quer um desses no seu negócio?"
