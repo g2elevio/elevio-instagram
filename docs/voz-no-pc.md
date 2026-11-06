@@ -25,6 +25,13 @@ node narrar.mjs --conferir
 node narrar.mjs posts/<pasta>
 ```
 
+## Narração em lote (fila)
+Os reels esperam a voz em `estoque.yaml` (`narracao: pendente`). Quando o PC estiver ligado, o Claude narra **a fila inteira** de uma vez, um reel por geração:
+- Caminho A: um `.txt` por reel em `Downloads\elevio-narracao\` e um `curl` por reel. Gere duas versões quando o roteiro tiver pergunta, para o usuário escolher a entonação.
+- Caminho B: `node narrar.mjs --fila`.
+
+Depois: `node reel.mjs posts/<pasta>` em cada um, `narracao: feita` no estoque, e o PR com os reels finais. Se o reel já passou da data e saiu a reserva, ele volta ao calendário numa data futura.
+
 ## Regras
 - Sempre `engine=voxcpm2`. Nunca OmniVoice (padrão do app, não comercial) nem XTTS.
 - Roteiro inteiro numa geração (`max_chunk_chars=0`): o VoxCPM2 pode mudar o locutor entre gerações.

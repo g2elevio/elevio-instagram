@@ -115,15 +115,24 @@ for (const arq of readdirSync('calendario').filter(a => a.endsWith('.yaml'))) {
   for (const item of doc.get('itens').items) {
     if (item.get('status') !== 'aprovado' || item.get('publicacao') !== 'api' || item.get('interativo')) continue;
     if (quando(item) > agora) continue;
-    // Reel aprovado mas ainda sem voz: espera a narração em vez de marcar erro.
+    // Reel aprovado mas ainda sem voz: publica o carrossel de reserva no lugar (se houver)
+    // ou espera a narração em vez de marcar erro. O reel volta para a fila do estoque.
+    let alvo = item;
     if (item.get('formato') === 'reel' && !existsSync(`${item.get('pasta')}/narracao.wav`)) {
-      console.warn(`Aguardando narração: ${item.get('data')} ${item.get('tema')}`);
-      continue;
+      const reserva = item.get('reserva');
+      if (!reserva) {
+        console.warn(`Aguardando narração: ${item.get('data')} ${item.get('tema')}`);
+        continue;
+      }
+      if (!existsSync(String(reserva))) { falhas++; console.error(`Reserva ${reserva} não existe.`); continue; }
+      alvo = { get: k => ({ formato: 'carrossel', pasta: String(reserva) })[k] };
+      console.warn(`Reel sem narração: ${item.get('data')} sai o carrossel de reserva ${reserva}.`);
     }
-    const nome = `${item.get('data')} ${item.get('formato')}: ${item.get('tema')}`;
-    if (TESTE) { console.log(`[teste] publicaria ${nome} (${midias(item).length} arquivo(s))`); continue; }
+    const nome = `${item.get('data')} ${alvo.get('formato')}: ${alvo === item ? item.get('tema') : alvo.get('pasta')}`;
+    if (TESTE) { console.log(`[teste] publicaria ${nome} (${midias(alvo).length} arquivo(s))`); continue; }
     try {
-      const r = await publicar(conta.user_id, item);
+      const r = await publicar(conta.user_id, alvo);
+      if (alvo !== item) item.set('publicado_no_lugar', alvo.get('pasta'));
       item.set('status', 'publicado');
       item.set('instagram_id', r.id);
       item.set('link', r.permalink);

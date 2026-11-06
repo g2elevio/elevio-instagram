@@ -1,0 +1,72 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "Organização de clientes",
+      "titulo": "Planilha ou CRM: *quando trocar?*",
+      "subtitulo": "A planilha funciona até o dia em que alguém esquece de atualizar."
+    },
+    {
+      "tipo": "comparativo",
+      "titulo": "O que muda no dia a dia",
+      "colunas": [
+        {
+          "nome": "Planilha",
+          "tag": "Manual",
+          "pontos": [
+            "Alguém copia cada contato",
+            "Status muda quando lembram",
+            "Não diz de onde veio o cliente"
+          ]
+        },
+        {
+          "nome": "CRM simples",
+          "tag": "Automático",
+          "destaque": true,
+          "pontos": [
+            "O contato entra sozinho",
+            "Cada etapa fica registrada",
+            "A origem vem marcada no link"
+          ]
+        }
+      ],
+      "solucao": "*Resumo:* a planilha guarda nomes; o CRM mostra o caminho de cada venda."
+    },
+    {
+      "tipo": "item",
+      "numero": "01",
+      "titulo": "Sinal de que passou da hora:",
+      "pontos": [
+        "Contato que some e ninguém retoma",
+        "Duas pessoas atendendo o mesmo cliente",
+        "Você não sabe qual anúncio traz venda"
+      ]
+    },
+    {
+      "tipo": "item",
+      "numero": "02",
+      "titulo": "O que um CRM simples precisa ter:",
+      "pontos": [
+        "Quadro com as etapas da venda",
+        "Histórico de cada cliente",
+        "Origem de cada contato"
+      ],
+      "solucao": "*Sem exagero:* só o que o seu time vai usar de verdade."
+    },
+    {
+      "tipo": "item",
+      "titulo": "A gente usa o nosso.",
+      "texto": "O CRM da Elevio foi feito por nós: cada contato do site chega com a origem marcada e fica num quadro por etapa.",
+      "solucao": "*Feito sob medida:* do tamanho do seu negócio."
+    },
+    {
+      "tipo": "cta",
+      "pre": "Ainda na planilha?",
+      "titulo": "A gente monta *o seu CRM.*",
+      "texto": "Diagnóstico gratuito e sem compromisso.",
+      "botao": "Peça seu diagnóstico →"
+    }
+  ]
+}

@@ -19,8 +19,9 @@ itens:
     formato: story
     tema: "Chamada para o carrossel novo"
     pasta: posts/2026-10-28-story-chamada
-    status: revisar
+    status: descartado
     publicacao: manual
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.
   - data: 2026-10-29
     hora: "19:00"
     formato: reel
@@ -36,52 +37,63 @@ itens:
     tema: "Enquete: Quer um desses no seu negócio?"
     interativo: true
     publicacao: manual
+    status: descartado
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.
   - data: 2026-10-30
     hora: "12:00"
     formato: carrossel
     pilar: dor
     tema: "Quanto custa responder 100 mensagens por dia? Atendente x bot"
-    status: rascunho
+    status: descartado
     pendencia: "Precisa de fonte real para salário e encargos (não inventar números)."
     publicacao: manual
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.
   - data: 2026-10-30
     formato: story
     tema: "Caixa: Me conta seu negócio que eu digo o que automatizar"
     interativo: true
     publicacao: manual
+    status: descartado
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.
   - data: 2026-10-31
     hora: "19:00"
     formato: reel
     pilar: bastidores
     tema: "Um dia construindo automações (time-lapse da tela + narração)"
-    status: rascunho
+    status: descartado
     pendencia: "Precisa de gravação de tela real."
     publicacao: manual
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.
   - data: 2026-11-01
     hora: "12:00"
     formato: carrossel
     pilar: oferta
     tema: "Quanto custa ter um bot de WhatsApp com IA? (faixas da tabela de preços)"
-    status: rascunho
+    status: descartado
     pendencia: "Usar só os preços da nota Catalogo de servicos e precos."
     publicacao: manual
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.
   - data: 2026-11-01
     formato: story
     tema: "Caixa de perguntas: o que você ainda responde na mão no WhatsApp?"
     interativo: true
     publicacao: manual
+    status: descartado
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.
   - data: 2026-11-02
     hora: "12:00"
     formato: carrossel
     pilar: educacao
     tema: "3 automações gratuitas que todo pequeno negócio deveria ligar hoje"
-    status: rascunho
+    status: descartado
     publicacao: manual
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.
   - data: 2026-11-03
     hora: "19:00"
     formato: reel
     pilar: demonstracao
     tema: "Pare de digitar a mesma resposta 30 vezes por dia (respostas rápidas + bot, 20s)"
-    status: rascunho
+    status: descartado
     pendencia: "Precisa do vídeo do bot demo."
     publicacao: manual
+    motivo: Não produzido; substituído pelo novo planejamento (dia sim, dia não) a partir de 09/11.

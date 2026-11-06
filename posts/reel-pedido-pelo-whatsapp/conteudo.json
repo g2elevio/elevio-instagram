@@ -1,0 +1,58 @@
+{
+  "formato": "reel",
+  "cenas": [
+    {
+      "tipo": "gancho",
+      "kicker": "Distribuidoras e delivery",
+      "titulo": "Pedido no WhatsApp *sem esperar atendente.*",
+      "texto": "Dá para ser assim?",
+      "fala": "E se o seu cliente pudesse fazer o pedido no WhatsApp sem esperar ninguém responder? Dá para ser assim?"
+    },
+    {
+      "tipo": "chat",
+      "contato": "Distribuidora (exemplo)",
+      "status": "Atendente de IA · online",
+      "mensagens": [
+        {
+          "de": "cliente",
+          "texto": "Boa noite! Tem água com gás?",
+          "hora": "21:12"
+        },
+        {
+          "de": "bot",
+          "texto": "Tem sim! Quantas unidades você quer?",
+          "hora": "21:12"
+        },
+        {
+          "de": "cliente",
+          "texto": "Duas caixas, por favor.",
+          "hora": "21:13"
+        },
+        {
+          "de": "bot",
+          "texto": "Anotado! Confirmo o pedido para o seu endereço?",
+          "hora": "21:13"
+        }
+      ],
+      "fala": "Com um atendente de inteligência artificial, ele confere o que tem no estoque, anota o pedido e confirma com o cliente, na hora."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "E quando precisa *de uma pessoa?*",
+      "pontos": [
+        "Ela passa a conversa para o atendente",
+        "O bot para de responder ali",
+        "Tudo fica registrado"
+      ],
+      "fala": "E quando precisa de uma pessoa? A conversa passa para o atendente, o bot para de responder, e tudo fica registrado."
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Pedidos no automático",
+      "titulo": "Quer isso *no seu negócio?*",
+      "botao": "Diagnóstico grátis",
+      "texto": "Link na bio",
+      "fala": "A Elevio monta isso para o seu negócio. Peça seu diagnóstico gratuito pelo link da bio."
+    }
+  ]
+}

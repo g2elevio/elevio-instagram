@@ -8,12 +8,12 @@ description: Use ao criar, revisar ou agendar posts do Instagram da Elevio (carr
 Repositório `g2elevio/elevio-instagram`. Leia `README.md` e `CLAUDE.md` antes de começar.
 
 ## Fluxo
-1. **Calendário:** um YAML por semana em `calendario/`, seguindo `cadencia.md`. Cada item: data, hora, formato, pilar, tema, pasta, status (`rascunho | revisar | aprovado | publicado | erro`), `publicacao` (`api | manual`) e `pendencia` quando faltar algo real. Para editar o YAML por código, use a biblioteca `yaml` (`parseDocument` + `toString({ lineWidth: 0 })`).
-2. **Carrossel e story:** `posts/<AAAA-MM-DD>-<tema>/conteudo.json` + `legenda.txt` → `node render.mjs posts/<pasta>` (gera `slide-N.jpg`). Tipos de slide: `capa`, `item`, `comparativo`, `cta`, `story`, `story-cta`. Destaque com `*asteriscos*`. Nunca editar o template por post.
+1. **Calendário e estoque:** um YAML por período em `calendario/` (dia sim, dia não, alternando carrossel 12h e reel 19h, ver `cadencia.md`); conteúdo pronto sem data fica em `estoque.yaml` (fora de `calendario/`, nunca publica sozinho). Reel sem narração no calendário leva `reserva:` com um carrossel pronto. Cada item: data, hora, formato, pilar, tema, pasta, status (`rascunho | revisar | aprovado | publicado | erro | descartado`), `publicacao` (`api | manual`) e `pendencia` quando faltar algo real. Para editar o YAML por código, use a biblioteca `yaml` (`parseDocument` + `toString({ lineWidth: 0 })`).
+2. **Carrossel e story:** `posts/carrossel-<tema>/conteudo.json` + `legenda.txt` → `node render.mjs posts/<pasta>` (gera `slide-N.jpg`). Tipos de slide: `capa`, `item`, `comparativo`, `cta`, `story`, `story-cta`. Destaque com `*asteriscos*`. Nunca editar o template por post.
 3. **Reel:** `conteudo.json` com `"formato": "reel"` e `cenas` (`gancho`, `texto`, `lista`, `chat`, `cta`), cada uma com `fala`. Gancho nos 2 primeiros segundos, 15 a 30 s no total. `node reel.mjs posts/<pasta>` gera a prévia muda; com `narracao.wav` na pasta, gera a versão final sincronizada.
-4. **Narração:** sempre no PC com a RTX 3060, VoiceStudio, motor `voxcpm2`, perfil "Elevio - locutor oficial", roteiro inteiro numa passada e "Eleví-o" no texto (feito por `roteiro.mjs`). Passo a passo: `docs/voz-no-pc.md`. Nunca OmniVoice ou XTTS. Sem o PC, deixar `pendencia` e seguir.
+4. **Narração:** sempre no PC com a RTX 3060, VoiceStudio, motor `voxcpm2`, perfil "Elevio - locutor oficial", roteiro inteiro numa passada e "Eleví-o" no texto (feito por `roteiro.mjs`). Passo a passo: `docs/voz-no-pc.md`. Nunca OmniVoice ou XTTS. Sem o PC, o reel fica na fila (`narracao: pendente` no estoque) e é narrado em lote quando der.
 5. **Conferir:** abrir as imagens e quadros do vídeo (grade com ffmpeg) e checar texto cortado, sobreposição e espaço vazio.
-6. **Aprovação:** tudo vai num PR com status `revisar`. Só o usuário aprova. Nada é publicado sem `status: aprovado`, e reel sem `narracao.wav` não publica.
+6. **Aprovação:** tudo vai num PR com status `revisar`. Só o usuário aprova. Nada é publicado sem `status: aprovado`, e reel sem `narracao.wav` não publica (sai a reserva, se houver).
 7. **Publicação:** GitHub Actions (`publicar.yml`) de hora em hora. Reels saem com o rótulo de IA (`is_ai_generated`).
 
 ## Regras da marca

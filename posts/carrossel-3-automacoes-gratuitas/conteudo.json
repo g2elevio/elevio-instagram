@@ -1,0 +1,46 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "WhatsApp Business",
+      "titulo": "3 automações *gratuitas* para ligar hoje",
+      "subtitulo": "Já vêm no app. A maioria dos negócios nunca ativou."
+    },
+    {
+      "tipo": "item",
+      "numero": "01",
+      "titulo": "Mensagem de saudação.",
+      "texto": "Quem chama pela primeira vez recebe na hora uma resposta com o que você faz e como pedir.",
+      "solucao": "*Onde fica:* Ferramentas comerciais › Mensagem de saudação."
+    },
+    {
+      "tipo": "item",
+      "numero": "02",
+      "titulo": "Mensagem de ausência.",
+      "texto": "Fora do horário, o cliente sabe quando vai ser atendido em vez de ficar no vácuo.",
+      "solucao": "*Onde fica:* Ferramentas comerciais › Mensagem de ausência."
+    },
+    {
+      "tipo": "item",
+      "numero": "03",
+      "titulo": "Respostas rápidas.",
+      "texto": "Preço, endereço, horário e formas de pagamento salvos num atalho. Digita / e escolhe.",
+      "solucao": "*Onde fica:* Ferramentas comerciais › Respostas rápidas."
+    },
+    {
+      "tipo": "item",
+      "titulo": "E quando isso não basta?",
+      "texto": "Essas três respondem, mas não entendem o que o cliente quer nem marcam horário ou anotam pedido.",
+      "solucao": "*Próximo passo:* um atendente de IA na API oficial do WhatsApp."
+    },
+    {
+      "tipo": "cta",
+      "pre": "Quer ir além do básico?",
+      "titulo": "A gente mostra *o que dá para automatizar.*",
+      "texto": "Diagnóstico gratuito e sem compromisso.",
+      "botao": "Peça seu diagnóstico →"
+    }
+  ]
+}

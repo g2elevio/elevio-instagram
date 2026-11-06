@@ -1,0 +1,60 @@
+# Dia sim, dia não, alternando carrossel (12h) e reel (19h). Ver cadencia.md.
+# status: rascunho | revisar | aprovado | publicado | erro | descartado
+# reserva: carrossel que sai no lugar do reel se ele chegar ao horário sem narracao.wav
+#          (o reel volta para a fila de estoque.yaml). A reserva também é revisada neste PR.
+periodo: 2026-11-09 a 2026-11-22
+itens:
+  - data: 2026-11-09
+    hora: "12:00"
+    formato: carrossel
+    pilar: dor
+    tema: "5 sinais de que seu WhatsApp está perdendo clientes"
+    pasta: posts/carrossel-whatsapp-perdendo-clientes
+    status: revisar
+    publicacao: api
+  - data: 2026-11-11
+    hora: "19:00"
+    formato: reel
+    pilar: dor
+    tema: "Você sabe de onde veio o seu último cliente?"
+    pasta: posts/reel-origem-do-cliente
+    reserva: posts/carrossel-antes-de-contratar-automacao
+    status: revisar
+    publicacao: api
+    pendencia: "Narração no VoiceStudio do PC"
+  - data: 2026-11-13
+    hora: "12:00"
+    formato: carrossel
+    pilar: educacao
+    tema: "3 automações gratuitas do WhatsApp Business para ligar hoje"
+    pasta: posts/carrossel-3-automacoes-gratuitas
+    status: revisar
+    publicacao: api
+  - data: 2026-11-15
+    hora: "19:00"
+    formato: reel
+    pilar: bastidores
+    tema: "O Instagram da Elevio se posta sozinho"
+    pasta: posts/reel-bastidor-automacao
+    reserva: posts/carrossel-bastidor-crm-clientes
+    status: revisar
+    publicacao: api
+    pendencia: "Narração no VoiceStudio do PC"
+  - data: 2026-11-17
+    hora: "12:00"
+    formato: carrossel
+    pilar: educacao
+    tema: "Planilha ou CRM: quando trocar?"
+    pasta: posts/carrossel-crm-x-planilha
+    status: revisar
+    publicacao: api
+  - data: 2026-11-19
+    hora: "19:00"
+    formato: reel
+    pilar: demonstracao
+    tema: "Pedido no WhatsApp sem esperar atendente (distribuidora de exemplo)"
+    pasta: posts/reel-pedido-pelo-whatsapp
+    reserva: posts/carrossel-ia-faz-nao-faz
+    status: revisar
+    publicacao: api
+    pendencia: "Narração no VoiceStudio do PC"

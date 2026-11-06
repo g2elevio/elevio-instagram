@@ -1,0 +1,44 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "Bastidores da Elevio",
+      "titulo": "Por dentro do *nosso CRM*",
+      "subtitulo": "O sistema que a gente fez para organizar a própria Elevio."
+    },
+    {
+      "tipo": "item",
+      "numero": "01",
+      "titulo": "Cada contato chega com a origem.",
+      "texto": "Quem preenche o formulário do site entra no CRM já marcado: Instagram, Google ou anúncio."
+    },
+    {
+      "tipo": "item",
+      "numero": "02",
+      "titulo": "Um quadro por etapa.",
+      "texto": "Novo, em conversa, proposta, fechado. Dá para ver num relance onde está cada oportunidade."
+    },
+    {
+      "tipo": "item",
+      "numero": "03",
+      "titulo": "Resultados num lugar só.",
+      "texto": "Visitas do site e números do Instagram aparecem juntos, atualizados todo dia."
+    },
+    {
+      "tipo": "item",
+      "numero": "04",
+      "titulo": "Clientes com histórico.",
+      "texto": "Cada cliente tem os projetos, os acessos e uma linha do tempo do que foi feito.",
+      "solucao": "*Dados protegidos:* só os sócios acessam."
+    },
+    {
+      "tipo": "cta",
+      "pre": "Quer um desses para a sua empresa?",
+      "titulo": "A gente faz *do seu jeito.*",
+      "texto": "Diagnóstico gratuito e sem compromisso.",
+      "botao": "Peça seu diagnóstico →"
+    }
+  ]
+}
