@@ -1,0 +1,65 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "Atendente de IA no WhatsApp",
+      "titulo": "O que a IA *faz* e o que ela *não faz*",
+      "subtitulo": "Sem promessa milagrosa: o que esperar de verdade."
+    },
+    {
+      "tipo": "comparativo",
+      "titulo": "Na prática",
+      "colunas": [
+        {
+          "nome": "Faz bem",
+          "tag": "Pode confiar",
+          "destaque": true,
+          "pontos": [
+            "Responde dúvidas a qualquer hora",
+            "Mostra horários e marca",
+            "Anota pedidos e confirma"
+          ]
+        },
+        {
+          "nome": "Não faz",
+          "tag": "Fica com você",
+          "pontos": [
+            "Negociar caso delicado",
+            "Resolver reclamação séria",
+            "Decidir fora das regras"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "numero": "01",
+      "titulo": "Ela segue as regras do seu negócio.",
+      "texto": "Preços, horários e o que pode ou não oferecer são definidos por você. Fora disso, ela não inventa.",
+      "solucao": "*Na dúvida:* ela passa a conversa para uma pessoa."
+    },
+    {
+      "tipo": "item",
+      "numero": "02",
+      "titulo": "A pessoa entra quando precisa.",
+      "texto": "Quando o atendente humano assume, o bot para de responder naquela conversa.",
+      "solucao": "*Resultado:* o cliente nunca fica falando com as paredes."
+    },
+    {
+      "tipo": "item",
+      "numero": "03",
+      "titulo": "Tudo fica registrado.",
+      "texto": "Cada conversa e cada pedido ficam salvos para você conferir depois.",
+      "solucao": "*Sem caixa-preta:* você vê o que a IA respondeu."
+    },
+    {
+      "tipo": "cta",
+      "pre": "Faz sentido para o seu negócio?",
+      "titulo": "A gente avalia *com você.*",
+      "texto": "Diagnóstico gratuito e sem compromisso.",
+      "botao": "Peça seu diagnóstico →"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "formato": "reel",
+  "cenas": [
+    {
+      "tipo": "gancho",
+      "kicker": "Anúncio, Instagram ou Google?",
+      "titulo": "De onde veio *seu último cliente?*",
+      "texto": "Você sabe responder?",
+      "fala": "Você sabe de onde veio o seu último cliente? Foi do anúncio? Do Instagram? Do Google?"
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Sem essa resposta, você *investe no escuro.*",
+      "texto": "Paga anúncio sem saber se ele trouxe alguma venda.",
+      "fala": "Sem essa resposta, você investe no escuro: paga anúncio sem saber se ele trouxe alguma venda."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Com a origem *marcada em cada contato:*",
+      "pontos": [
+        "O link já diz de onde a pessoa veio",
+        "O contato entra no CRM com a origem",
+        "Você vê o que traz cliente de verdade"
+      ],
+      "fala": "A saída é marcar a origem em cada link. Quando a pessoa chama, o contato já entra no CRM dizendo de onde ela veio. E você enxerga o que traz cliente de verdade."
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Contatos organizados",
+      "titulo": "Quer saber de onde *vêm seus clientes?*",
+      "botao": "Diagnóstico grátis",
+      "texto": "Link na bio",
+      "fala": "A Elevio monta isso para o seu negócio. Peça seu diagnóstico gratuito pelo link da bio."
+    }
+  ]
+}

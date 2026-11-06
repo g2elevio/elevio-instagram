@@ -1,0 +1,47 @@
+# Estoque de conteúdo pronto, ainda sem data. Fica FORA de calendario/ de propósito:
+# o publicar.mjs só lê calendario/, então nada daqui é publicado sem ir para um calendário aprovado.
+#
+# Meta: pelo menos 4 carrosséis prontos e 3 reels com roteiro e prévia (rotina-semanal.md).
+# Carrossel: status pronto | agendado (já está num calendário) | usado (publicado)
+# Reel: narracao pendente | feita. Reel com narração pendente pode ir ao calendário com um carrossel de reserva.
+carrosseis:
+  - pasta: posts/carrossel-whatsapp-perdendo-clientes
+    tema: "5 sinais de que seu WhatsApp está perdendo clientes"
+    pilar: dor
+    status: agendado
+  - pasta: posts/carrossel-3-automacoes-gratuitas
+    tema: "3 automações gratuitas do WhatsApp Business para ligar hoje"
+    pilar: educacao
+    status: agendado
+  - pasta: posts/carrossel-crm-x-planilha
+    tema: "Planilha ou CRM: quando trocar?"
+    pilar: educacao
+    status: agendado
+  - pasta: posts/carrossel-antes-de-contratar-automacao
+    tema: "5 perguntas antes de contratar uma automação"
+    pilar: educacao
+    status: agendado
+    uso: reserva do reel de 11/11
+  - pasta: posts/carrossel-bastidor-crm-clientes
+    tema: "Por dentro do CRM da Elevio"
+    pilar: bastidores
+    status: agendado
+    uso: reserva do reel de 15/11
+  - pasta: posts/carrossel-ia-faz-nao-faz
+    tema: "O que a IA faz e o que ela não faz no atendimento"
+    pilar: educacao
+    status: agendado
+    uso: reserva do reel de 19/11
+reels:
+  - pasta: posts/reel-origem-do-cliente
+    tema: "Você sabe de onde veio o seu último cliente?"
+    pilar: dor
+    narracao: pendente
+  - pasta: posts/reel-bastidor-automacao
+    tema: "O Instagram da Elevio se posta sozinho"
+    pilar: bastidores
+    narracao: pendente
+  - pasta: posts/reel-pedido-pelo-whatsapp
+    tema: "Pedido no WhatsApp sem esperar atendente (distribuidora de exemplo)"
+    pilar: demonstracao
+    narracao: pendente

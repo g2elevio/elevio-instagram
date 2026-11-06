@@ -1,0 +1,54 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "Atendimento pelo WhatsApp",
+      "titulo": "5 sinais de que seu WhatsApp está *perdendo clientes*",
+      "subtitulo": "Se você se reconhecer em dois ou mais, vale olhar com calma."
+    },
+    {
+      "tipo": "item",
+      "numero": "01",
+      "titulo": "Mensagem fora do horário fica para amanhã.",
+      "texto": "Quem chama às 22h e só recebe resposta no dia seguinte muitas vezes já fechou com outro.",
+      "solucao": "*Solução:* atendente de IA que responde na hora e já agenda."
+    },
+    {
+      "tipo": "item",
+      "numero": "02",
+      "titulo": "Você responde a mesma pergunta o dia todo.",
+      "texto": "Preço, horário, endereço, formas de pagamento. Tempo que podia ir para fechar venda.",
+      "solucao": "*Solução:* respostas rápidas e um menu automático."
+    },
+    {
+      "tipo": "item",
+      "numero": "03",
+      "titulo": "O cliente some depois do preço.",
+      "texto": "Ninguém retoma a conversa, e a venda esfria sozinha.",
+      "solucao": "*Solução:* lembrete automático para retomar o contato."
+    },
+    {
+      "tipo": "item",
+      "numero": "04",
+      "titulo": "As conversas ficam no celular de uma pessoa.",
+      "texto": "Se ela falta ou sai da empresa, o histórico vai junto.",
+      "solucao": "*Solução:* WhatsApp oficial com vários atendentes no mesmo número."
+    },
+    {
+      "tipo": "item",
+      "numero": "05",
+      "titulo": "Ninguém sabe quantas conversas viraram venda.",
+      "texto": "Sem esse controle, não dá para saber o que melhorar.",
+      "solucao": "*Solução:* um CRM simples com a origem e a etapa de cada contato."
+    },
+    {
+      "tipo": "cta",
+      "pre": "Se reconheceu em algum?",
+      "titulo": "A gente mostra onde está *o vazamento.*",
+      "texto": "Diagnóstico gratuito e sem compromisso.",
+      "botao": "Peça seu diagnóstico →"
+    }
+  ]
+}

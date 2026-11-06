@@ -1,16 +1,23 @@
-# Cadência semanal (proposta para depois de 03/11)
+# Cadência (a partir de 09/11/2026)
 
-Conta com menos de 100 seguidores: constância vale mais que volume. Proposta: **4 posts no feed por semana + stories em 5 dias**.
+**Um post a cada dois dias, alternando carrossel e reel.** Conta pequena: constância vale mais que volume, e o ritmo cabe no tempo de revisão e no PC da narração.
 
-| Dia | Feed | Pilar | Stories |
+| Dia | Formato | Hora | Pilar |
 | --- | --- | --- | --- |
-| Seg | Carrossel | Educação | Chamada para o post (automático) |
-| Qua | Reel | Demonstração | Enquete (manual, figurinha) |
-| Sex | Carrossel | Dor do cliente | Chamada para o post (automático) |
-| Sáb | Reel | Bastidores ou oferta | Caixa de perguntas (manual, figurinha) |
-| Dom | — | — | Bastidor da semana (automático) |
+| Dia 1 | Carrossel | 12h | dor ou educação |
+| Dia 3 | Reel | 19h | demonstração ou bastidores |
+| Dia 5 | Carrossel | 12h | educação ou bastidores |
+| Dia 7 | Reel | 19h | dor ou demonstração |
 
-- Horários: 12h para carrossel, 19h para reel (melhores faixas do plano de lançamento).
-- Rodízio de pilares do plano: dor 30%, demonstração 25%, educação 20%, bastidores 15%, oferta 10%.
+A sequência continua sem parar no fim de semana (ex.: 09/11 carrossel, 11/11 reel, 13/11 carrossel...). Como a semana tem 7 dias, o formato de cada dia da semana muda de uma semana para a outra.
+
+## Estoque (`estoque.yaml`)
+- **Carrosséis** são produzidos antes, em lote, e ficam prontos no estoque (meta: 4 ou mais além dos já agendados).
+- **Reels** ficam com roteiro, legenda e prévia muda prontos, na fila de narração. A voz é feita no PC com a RTX 3060 **quando der**, em lote (`docs/voz-no-pc.md`).
+- Todo reel no calendário tem um **carrossel de reserva** (`reserva:`). Se chegar o horário e o reel ainda não tiver `narracao.wav`, o `publicar.mjs` publica a reserva no lugar e o reel volta para a fila. Assim o ritmo não para se o PC não for ligado.
+
+## Regras
+- Stories saíram da cadência por enquanto (só manuais, quando houver algo para mostrar).
+- Rodízio de pilares do plano: dor 30%, demonstração 25%, educação 20%, bastidores 15%, oferta 10% (sem oferta com prazo até os sócios definirem uma).
 - Reels de 15 a 30 s, gancho nos 2 primeiros segundos. Carrosséis de 5 a 8 slides.
-- Produção em lote: o Claude monta a semana seguinte até quinta; o usuário aprova; publica a partir de segunda.
+- O calendário cobre duas semanas e é aprovado de uma vez no PR.

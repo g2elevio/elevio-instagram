@@ -1,0 +1,49 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "Antes de fechar com alguém",
+      "titulo": "5 perguntas antes de *contratar uma automação*",
+      "subtitulo": "Para não pagar por algo que ninguém vai usar."
+    },
+    {
+      "tipo": "item",
+      "numero": "01",
+      "titulo": "Qual tarefa ela tira das minhas mãos?",
+      "texto": "Se ninguém sabe dizer qual trabalho some, a automação ainda não tem objetivo."
+    },
+    {
+      "tipo": "item",
+      "numero": "02",
+      "titulo": "Fica no meu nome?",
+      "texto": "Número, contas e servidores devem estar no nome da sua empresa, não de quem fez."
+    },
+    {
+      "tipo": "item",
+      "numero": "03",
+      "titulo": "Usa a API oficial do WhatsApp?",
+      "texto": "Ferramenta não oficial pode levar o número a ser banido."
+    },
+    {
+      "tipo": "item",
+      "numero": "04",
+      "titulo": "E se eu quiser mudar algo depois?",
+      "texto": "Pergunte como funcionam ajustes e manutenção antes de começar."
+    },
+    {
+      "tipo": "item",
+      "numero": "05",
+      "titulo": "Quanto custa por mês para manter?",
+      "texto": "Além do projeto, existem custos de uso, como as mensagens da Meta. Peça isso por escrito."
+    },
+    {
+      "tipo": "cta",
+      "pre": "Quer essas respostas sobre o seu caso?",
+      "titulo": "A gente responde *sem enrolação.*",
+      "texto": "Diagnóstico gratuito e sem compromisso.",
+      "botao": "Peça seu diagnóstico →"
+    }
+  ]
+}

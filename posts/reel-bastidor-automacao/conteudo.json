@@ -1,0 +1,36 @@
+{
+  "formato": "reel",
+  "cenas": [
+    {
+      "tipo": "gancho",
+      "kicker": "Bastidores da Elevio",
+      "titulo": "Nosso Instagram *se posta sozinho.*",
+      "texto": "Mas nada sai sem a gente aprovar.",
+      "fala": "Sabia que o Instagram da Elevio se posta sozinho? Mas nada vai ao ar sem a nossa aprovação."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Como funciona:",
+      "pontos": [
+        "A IA escreve e desenha os posts da semana",
+        "A gente revisa e aprova",
+        "O sistema publica no horário certo"
+      ],
+      "fala": "Funciona assim: toda semana, a inteligência artificial escreve e desenha os posts. A gente revisa e aprova. E o sistema publica sozinho, no horário certo."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Até esta voz *é feita com IA.*",
+      "texto": "Gerada no nosso próprio computador.",
+      "fala": "Até esta voz é feita com inteligência artificial, no nosso próprio computador."
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Tarefa repetitiva?",
+      "titulo": "A gente *automatiza.*",
+      "botao": "Diagnóstico grátis",
+      "texto": "Link na bio",
+      "fala": "Tem alguma tarefa repetitiva tomando o seu tempo? A Elevio automatiza. Peça seu diagnóstico gratuito pelo link da bio."
+    }
+  ]
+}
