@@ -21,9 +21,12 @@ itens:
     tema: "Você sabe de onde veio o seu último cliente?"
     pasta: posts/reel-origem-do-cliente
     reserva: posts/carrossel-antes-de-contratar-automacao
-    status: aprovado
+    status: publicado
     publicacao: api
     pendencia: "Narração no VoiceStudio do PC"
+    publicado_no_lugar: posts/carrossel-antes-de-contratar-automacao
+    instagram_id: "18091873817247448"
+    link: https://www.instagram.com/p/DfnhmOnlGo6/
   - data: 2026-11-13
     hora: "12:00"
     formato: carrossel
