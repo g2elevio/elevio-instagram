@@ -63,3 +63,11 @@ itens:
     status: aprovado
     publicacao: api
     pendencia: "Narração no VoiceStudio do PC"
+  - data: 2026-11-21
+    hora: "12:00"
+    formato: carrossel
+    pilar: oferta
+    tema: O que a gente pergunta no diagnóstico gratuito
+    pasta: posts/carrossel-como-funciona-o-diagnostico
+    status: revisar
+    publicacao: api
