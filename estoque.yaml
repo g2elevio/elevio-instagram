@@ -8,7 +8,7 @@ carrosseis:
   - pasta: posts/carrossel-whatsapp-perdendo-clientes
     tema: "5 sinais de que seu WhatsApp está perdendo clientes"
     pilar: dor
-    status: agendado
+    status: usado
   - pasta: posts/carrossel-3-automacoes-gratuitas
     tema: "3 automações gratuitas do WhatsApp Business para ligar hoje"
     pilar: educacao
@@ -20,8 +20,8 @@ carrosseis:
   - pasta: posts/carrossel-antes-de-contratar-automacao
     tema: "5 perguntas antes de contratar uma automação"
     pilar: educacao
-    status: agendado
-    uso: reserva do reel de 11/11
+    status: usado
+    uso: publicado em 11/11 no lugar do reel sem voz
   - pasta: posts/carrossel-bastidor-crm-clientes
     tema: "Por dentro do CRM da Elevio"
     pilar: bastidores
@@ -32,11 +32,33 @@ carrosseis:
     pilar: educacao
     status: agendado
     uso: reserva do reel de 19/11
+  - pasta: posts/carrossel-como-funciona-o-diagnostico
+    tema: O que a gente pergunta no diagnóstico gratuito
+    pilar: oferta
+    status: agendado
+    uso: calendário de 21/11
+  - pasta: posts/carrossel-como-comecamos-um-projeto
+    tema: Do primeiro contato ao sistema no ar
+    pilar: bastidores
+    status: pronto
+  - pasta: posts/carrossel-produto-em-falta
+    tema: O cliente pediu algo que acabou. E agora?
+    pilar: demonstracao
+    status: pronto
+  - pasta: posts/carrossel-fora-do-horario
+    tema: Seu negócio fecha. Seu cliente não.
+    pilar: dor
+    status: pronto
+  - pasta: posts/carrossel-perguntas-repetidas
+    tema: As perguntas que você responde todo dia
+    pilar: educacao
+    status: pronto
 reels:
   - pasta: posts/reel-origem-do-cliente
     tema: "Você sabe de onde veio o seu último cliente?"
     pilar: dor
     narracao: pendente
+    obs: Saiu a reserva em 11/11; volta ao calendário quando tiver voz.
   - pasta: posts/reel-bastidor-automacao
     tema: "O Instagram da Elevio se posta sozinho"
     pilar: bastidores
