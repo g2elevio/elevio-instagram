@@ -33,8 +33,10 @@ itens:
     pilar: educacao
     tema: "3 automações gratuitas do WhatsApp Business para ligar hoje"
     pasta: posts/carrossel-3-automacoes-gratuitas
-    status: aprovado
+    status: publicado
     publicacao: api
+    instagram_id: "17998158819030383"
+    link: https://www.instagram.com/p/DfsBsjlICMc/
   - data: 2026-11-15
     hora: "19:00"
     formato: reel
