@@ -44,9 +44,12 @@ itens:
     tema: "O Instagram da Elevio se posta sozinho"
     pasta: posts/reel-bastidor-automacao
     reserva: posts/carrossel-bastidor-crm-clientes
-    status: aprovado
+    status: publicado
     publicacao: api
     pendencia: "Narração no VoiceStudio do PC"
+    publicado_no_lugar: posts/carrossel-bastidor-crm-clientes
+    instagram_id: "18076444919774695"
+    link: https://www.instagram.com/p/DfyOFMWlD26/
   - data: 2026-11-17
     hora: "12:00"
     formato: carrossel
