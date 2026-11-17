@@ -56,8 +56,10 @@ itens:
     pilar: educacao
     tema: "Planilha ou CRM: quando trocar?"
     pasta: posts/carrossel-crm-x-planilha
-    status: aprovado
+    status: publicado
     publicacao: api
+    instagram_id: "18201862684343617"
+    link: https://www.instagram.com/p/Df2-bILD674/
   - data: 2026-11-19
     hora: "19:00"
     formato: reel
