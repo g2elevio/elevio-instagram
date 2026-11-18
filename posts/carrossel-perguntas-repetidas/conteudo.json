@@ -1,0 +1,12 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {"tipo": "capa", "kicker": "WhatsApp do negócio", "titulo": "As perguntas que você *responde todo dia*", "subtitulo": "E como parar de digitar a mesma coisa."},
+    {"tipo": "item", "numero": "01", "titulo": "\"Qual o horário?\"", "texto": "Vai no perfil comercial e na mensagem de saudação."},
+    {"tipo": "item", "numero": "02", "titulo": "\"Quanto custa?\"", "texto": "Catálogo do WhatsApp Business ou uma resposta rápida com a tabela."},
+    {"tipo": "item", "numero": "03", "titulo": "\"Onde fica?\" e \"Entrega?\"", "texto": "Uma resposta rápida com endereço, mapa e região de entrega."},
+    {"tipo": "item", "titulo": "Anote por uma semana.", "texto": "Marque cada pergunta repetida. As que aparecem todo dia são as primeiras a automatizar.", "solucao": "*Dica:* o que sobrar de dúvida diferente é onde a IA ajuda."},
+    {"tipo": "cta", "pre": "Cansou de copiar e colar?", "titulo": "A gente *automatiza com você.*", "texto": "Diagnóstico gratuito e sem compromisso.", "botao": "Peça seu diagnóstico →"}
+  ]
+}

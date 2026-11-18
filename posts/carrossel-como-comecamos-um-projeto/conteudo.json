@@ -1,0 +1,12 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {"tipo": "capa", "kicker": "Bastidores da Elevio", "titulo": "Do primeiro contato *ao sistema no ar*", "subtitulo": "Como um projeto anda por aqui, passo a passo."},
+    {"tipo": "item", "numero": "01", "titulo": "Diagnóstico.", "texto": "Uma conversa para entender o negócio, as dores e o objetivo."},
+    {"tipo": "item", "numero": "02", "titulo": "Proposta fechada.", "texto": "Escopo e preço definidos antes de começar. Sem hora extra surpresa."},
+    {"tipo": "item", "numero": "03", "titulo": "Tudo na sua conta.", "texto": "Número do WhatsApp, servidores e acessos ficam no nome da sua empresa.", "solucao": "*Por quê:* o sistema é seu, não fica preso a nós."},
+    {"tipo": "item", "numero": "04", "titulo": "Entrega e ajuste.", "texto": "Você testa com a gente, ajustamos o que precisar e só então vai para o dia a dia. Manutenção mensal é opcional."},
+    {"tipo": "cta", "pre": "Quer começar o seu?", "titulo": "O primeiro passo é *uma conversa.*", "texto": "Diagnóstico gratuito e sem compromisso.", "botao": "Peça seu diagnóstico →"}
+  ]
+}

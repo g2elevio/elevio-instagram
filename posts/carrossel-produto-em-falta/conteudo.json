@@ -1,0 +1,12 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {"tipo": "capa", "kicker": "Atendente de IA no WhatsApp", "titulo": "O cliente pediu algo *que acabou.* E agora?", "subtitulo": "Como um bom atendente de IA lida com produto em falta."},
+    {"tipo": "item", "numero": "01", "titulo": "Confere antes de prometer.", "texto": "Ele consulta o estoque na hora, em vez de dizer \"tem sim\" e descobrir depois."},
+    {"tipo": "item", "numero": "02", "titulo": "Avisa com clareza.", "texto": "\"Esse acabou\" é melhor do que silêncio ou um pedido que nunca chega."},
+    {"tipo": "item", "numero": "03", "titulo": "Oferece o que tem.", "texto": "Sugere opções parecidas que estão disponíveis, sem empurrar.", "solucao": "*Resultado:* a conversa continua em vez de acabar."},
+    {"tipo": "item", "titulo": "E se o cliente insistir?", "texto": "Ele passa a conversa para uma pessoa da equipe e para de responder ali."},
+    {"tipo": "cta", "pre": "Vende pelo WhatsApp?", "titulo": "A gente mostra *como ficaria no seu.*", "texto": "Diagnóstico gratuito e sem compromisso.", "botao": "Peça seu diagnóstico →"}
+  ]
+}

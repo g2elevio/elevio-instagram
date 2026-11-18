@@ -1,0 +1,12 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {"tipo": "capa", "kicker": "Atendimento", "titulo": "Seu negócio fecha. *Seu cliente não.*", "subtitulo": "O que acontece com quem chama depois do expediente."},
+    {"tipo": "item", "numero": "01", "titulo": "A mensagem chega à noite.", "texto": "O cliente está com tempo, no celular, pronto para perguntar ou pedir."},
+    {"tipo": "item", "numero": "02", "titulo": "Ninguém responde.", "texto": "Na manhã seguinte, ele já falou com outro lugar que respondeu primeiro."},
+    {"tipo": "item", "numero": "03", "titulo": "O básico já ajuda.", "texto": "Mensagem de ausência com horário de volta e um link útil, de graça no WhatsApp Business.", "solucao": "*Melhor ainda:* um atendente de IA que tira dúvida e anota o pedido."},
+    {"tipo": "item", "titulo": "E de manhã?", "texto": "A equipe chega com tudo registrado: quem chamou, o que queria e o que falta responder."},
+    {"tipo": "cta", "pre": "Perde cliente à noite?", "titulo": "A gente resolve *o seu horário.*", "texto": "Diagnóstico gratuito e sem compromisso.", "botao": "Peça seu diagnóstico →"}
+  ]
+}

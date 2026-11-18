@@ -1,0 +1,12 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {"tipo": "capa", "kicker": "Diagnóstico gratuito", "titulo": "O que a gente *pergunta no diagnóstico*", "subtitulo": "Uma conversa curta para entender o seu negócio antes de falar em solução."},
+    {"tipo": "item", "numero": "01", "titulo": "Seu negócio e o dia a dia.", "texto": "O que você vende, quem atende e como o cliente chega até você hoje."},
+    {"tipo": "item", "numero": "02", "titulo": "Onde dói.", "texto": "As tarefas que tomam tempo, as mensagens que ficam sem resposta e o que se perde no caminho."},
+    {"tipo": "item", "numero": "03", "titulo": "Aonde você quer chegar.", "texto": "O objetivo e o que não pode mudar: orçamento, ferramentas que já usa, quem vai operar.", "solucao": "*Sem questionário:* é uma conversa, não um formulário."},
+    {"tipo": "item", "titulo": "Depois, um mapa.", "texto": "Cada dor ligada ao ponto do atendimento onde ela acontece e ao que resolve. Você vê o que vale automatizar e o que não vale.", "solucao": "*Resultado:* proposta com preço fechado, sem surpresa."},
+    {"tipo": "cta", "pre": "Quer o seu mapa?", "titulo": "Comece pelo *diagnóstico.*", "texto": "Gratuito e sem compromisso.", "botao": "Peça seu diagnóstico →"}
+  ]
+}
