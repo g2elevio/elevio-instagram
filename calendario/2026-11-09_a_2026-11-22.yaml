@@ -69,7 +69,6 @@ itens:
     reserva: posts/carrossel-ia-faz-nao-faz
     status: aprovado
     publicacao: api
-    pendencia: "Narração no VoiceStudio do PC"
   - data: 2026-11-21
     hora: "12:00"
     formato: carrossel
