@@ -1,4 +1,28 @@
 # Dia sim, dia não, alternando carrossel (12h) e reel (19h). Ver cadencia.md.
 # status: rascunho | revisar | aprovado | publicado | erro | descartado
 periodo: 2026-11-23 a 2026-12-06
-itens: [ { data: 2026-11-23, hora: "19:00", formato: reel, pilar: dor, tema: Você sabe de onde veio o seu último cliente?, pasta: posts/reel-origem-do-cliente, status: revisar, publicacao: api }, { data: 2026-11-25, hora: "12:00", formato: carrossel, pilar: dor, tema: Seu negócio fecha. Seu cliente não., pasta: posts/carrossel-fora-do-horario, status: revisar, publicacao: api }, { data: 2026-11-27, hora: "19:00", formato: reel, pilar: bastidores, tema: O Instagram da Elevio se posta sozinho, pasta: posts/reel-bastidor-automacao, status: revisar, publicacao: api } ]
+itens:
+  - data: 2026-11-23
+    hora: "19:00"
+    formato: reel
+    pilar: dor
+    tema: "Você sabe de onde veio o seu último cliente?"
+    pasta: posts/reel-origem-do-cliente
+    status: revisar
+    publicacao: api
+  - data: 2026-11-25
+    hora: "12:00"
+    formato: carrossel
+    pilar: dor
+    tema: "Seu negócio fecha. Seu cliente não."
+    pasta: posts/carrossel-fora-do-horario
+    status: revisar
+    publicacao: api
+  - data: 2026-11-27
+    hora: "19:00"
+    formato: reel
+    pilar: bastidores
+    tema: "O Instagram da Elevio se posta sozinho"
+    pasta: posts/reel-bastidor-automacao
+    status: revisar
+    publicacao: api
