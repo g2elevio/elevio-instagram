@@ -1,0 +1,13 @@
+{
+  "formato": "reel",
+  "cenas": [
+    {"tipo": "gancho", "kicker": "Vendas pelo WhatsApp", "titulo": "O cliente pediu *algo que acabou.*", "texto": "E agora?", "fala": "O cliente pediu um produto que acabou. E agora? Silêncio?"},
+    {"tipo": "chat", "contato": "Loja (exemplo)", "status": "Atendente de IA · online", "mensagens": [
+      {"de": "cliente", "texto": "Oi! Ainda tem o tênis branco 40?", "hora": "20:41"},
+      {"de": "bot", "texto": "Esse acabou no 40. Tenho o mesmo modelo em preto, no 40. Quer ver a foto?", "hora": "20:41"},
+      {"de": "cliente", "texto": "Quero sim!", "hora": "20:42"}
+    ], "fala": "Um atendente de inteligência artificial confere o estoque na hora, avisa que acabou e já sugere o que tem parecido."},
+    {"tipo": "lista", "titulo": "Assim, *a venda continua:*", "pontos": ["Nada de prometer o que não tem", "Sugestão parecida na hora", "Pessoa da equipe quando precisa"], "fala": "Nada de prometer o que não tem. E, se o cliente quiser falar com alguém, a conversa passa para a sua equipe."},
+    {"tipo": "cta", "kicker": "Atendimento que vende", "titulo": "Quer isso *no seu negócio?*", "botao": "Diagnóstico grátis", "texto": "Link na bio", "fala": "A Elevio monta isso para você. Peça seu diagnóstico gratuito pelo link da bio."}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "formato": "reel",
+  "cenas": [
+    {"tipo": "gancho", "kicker": "Antes de contratar", "titulo": "Quanto custa *uma automação?*", "texto": "Depende. Mas não precisa ser surpresa.", "fala": "Quanto custa uma automação? Depende. Mas não precisa ser surpresa."},
+    {"tipo": "lista", "titulo": "Como a gente *faz o preço:*", "pontos": ["Diagnóstico gratuito primeiro", "Escopo e preço fechados antes de começar", "Tudo fica na conta da sua empresa"], "fala": "Aqui, primeiro vem uma conversa para entender o negócio. Depois, escopo e preço fechados, antes de começar. E tudo fica na conta da sua empresa."},
+    {"tipo": "texto", "titulo": "Manutenção *é opcional.*", "texto": "O sistema é seu.", "fala": "Manutenção mensal? Só se você quiser. O sistema é seu."},
+    {"tipo": "cta", "kicker": "Sem surpresa", "titulo": "Quer saber *quanto fica o seu?*", "botao": "Diagnóstico grátis", "texto": "Link na bio", "fala": "Quer saber quanto fica o seu? Peça o diagnóstico gratuito da Elevio pelo link da bio."}
+  ]
+}
