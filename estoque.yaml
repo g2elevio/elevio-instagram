@@ -53,6 +53,11 @@ carrosseis:
   - pasta: posts/carrossel-perguntas-repetidas
     tema: As perguntas que você responde todo dia
     pilar: educacao
+    status: agendado
+    uso: calendário de 29/11
+  - pasta: posts/carrossel-whatsapp-oficial
+    tema: WhatsApp oficial ou não oficial?
+    pilar: educacao
     status: pronto
 reels:
   - pasta: posts/reel-origem-do-cliente
@@ -67,3 +72,15 @@ reels:
     tema: "Pedido no WhatsApp sem esperar atendente (distribuidora de exemplo)"
     pilar: demonstracao
     narracao: feita
+  - pasta: posts/reel-produto-em-falta
+    tema: O cliente pediu algo que acabou (loja de exemplo)
+    pilar: demonstracao
+    narracao: pendente
+  - pasta: posts/reel-perguntas-repetidas
+    tema: Qual o horário? Quanto custa? Entrega?
+    pilar: dor
+    narracao: pendente
+  - pasta: posts/reel-preco-fechado
+    tema: Quanto custa uma automação?
+    pilar: bastidores
+    narracao: pendente

@@ -26,3 +26,11 @@ itens:
     pasta: posts/reel-bastidor-automacao
     status: revisar
     publicacao: api
+  - data: 2026-11-29
+    hora: "12:00"
+    formato: carrossel
+    pilar: educacao
+    tema: "As perguntas que você responde todo dia"
+    pasta: posts/carrossel-perguntas-repetidas
+    status: revisar
+    publicacao: api
