@@ -67,8 +67,10 @@ itens:
     tema: "Pedido no WhatsApp sem esperar atendente (distribuidora de exemplo)"
     pasta: posts/reel-pedido-pelo-whatsapp
     reserva: posts/carrossel-ia-faz-nao-faz
-    status: aprovado
+    status: publicado
     publicacao: api
+    instagram_id: "18345810151260409"
+    link: https://www.instagram.com/reel/Df8o-VsnB74/
   - data: 2026-11-21
     hora: "12:00"
     formato: carrossel
