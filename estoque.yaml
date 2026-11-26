@@ -30,13 +30,12 @@ carrosseis:
   - pasta: posts/carrossel-ia-faz-nao-faz
     tema: "O que a IA faz e o que ela não faz no atendimento"
     pilar: educacao
-    status: agendado
-    uso: reserva do reel de 19/11 (o reel agora tem voz; volta a pronto se não for usada)
+    status: pronto
   - pasta: posts/carrossel-como-funciona-o-diagnostico
     tema: O que a gente pergunta no diagnóstico gratuito
     pilar: oferta
     status: agendado
-    uso: calendário de 21/11
+    uso: calendário de 30/11
   - pasta: posts/carrossel-como-comecamos-um-projeto
     tema: Do primeiro contato ao sistema no ar
     pilar: bastidores
@@ -49,11 +48,17 @@ carrosseis:
     tema: Seu negócio fecha. Seu cliente não.
     pilar: dor
     status: agendado
-    uso: calendário de 25/11
+    uso: calendário de 04/12
   - pasta: posts/carrossel-perguntas-repetidas
     tema: As perguntas que você responde todo dia
     pilar: educacao
-    status: pronto
+    status: agendado
+    uso: calendário de 08/12
+  - pasta: posts/carrossel-whatsapp-oficial
+    tema: WhatsApp oficial ou não oficial?
+    pilar: educacao
+    status: agendado
+    uso: reserva do reel de 10/12
 reels:
   - pasta: posts/reel-origem-do-cliente
     tema: "Você sabe de onde veio o seu último cliente?"
@@ -67,3 +72,15 @@ reels:
     tema: "Pedido no WhatsApp sem esperar atendente (distribuidora de exemplo)"
     pilar: demonstracao
     narracao: feita
+  - pasta: posts/reel-produto-em-falta
+    tema: O cliente pediu algo que acabou (loja de exemplo)
+    pilar: demonstracao
+    narracao: pendente
+  - pasta: posts/reel-perguntas-repetidas
+    tema: Qual o horário? Quanto custa? Entrega?
+    pilar: dor
+    narracao: pendente
+  - pasta: posts/reel-preco-fechado
+    tema: Quanto custa uma automação?
+    pilar: bastidores
+    narracao: pendente

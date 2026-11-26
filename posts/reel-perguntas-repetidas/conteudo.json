@@ -1,0 +1,9 @@
+{
+  "formato": "reel",
+  "cenas": [
+    {"tipo": "gancho", "kicker": "WhatsApp do negócio", "titulo": "Qual o horário? *Quanto custa? Entrega?*", "texto": "Todo dia, as mesmas perguntas.", "fala": "Qual o horário? Quanto custa? Vocês entregam? Todo dia, as mesmas perguntas."},
+    {"tipo": "texto", "titulo": "Cada resposta digitada *é tempo que não volta.*", "texto": "E quem espera desiste.", "fala": "Cada resposta digitada à mão é tempo que não volta. E quem espera muito acaba desistindo."},
+    {"tipo": "lista", "titulo": "Comece pelo *que é de graça:*", "pontos": ["Saudação com o horário", "Respostas rápidas com preço e endereço", "Catálogo no WhatsApp Business"], "fala": "Comece pelo que é de graça: saudação com o horário, respostas rápidas e o catálogo do WhatsApp Business."},
+    {"tipo": "cta", "kicker": "Quer ir além?", "titulo": "A gente *automatiza o resto.*", "botao": "Diagnóstico grátis", "texto": "Link na bio", "fala": "Quando isso não bastar, a Elevio automatiza o resto. Peça seu diagnóstico gratuito pelo link da bio."}
+  ]
+}

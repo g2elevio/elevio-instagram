@@ -1,0 +1,14 @@
+{
+  "formato": "carrossel",
+  "rodape_cta": "Link na bio",
+  "slides": [
+    {"tipo": "capa", "kicker": "Antes de automatizar", "titulo": "WhatsApp oficial ou *não oficial?*", "subtitulo": "A diferença que pode custar o número da sua empresa."},
+    {"tipo": "comparativo", "titulo": "O que muda", "colunas": [
+      {"nome": "Não oficial", "tag": "Risco", "pontos": ["Simula um celular conectado", "Pode levar o número a ser bloqueado", "Para quando o app atualiza"]},
+      {"nome": "API oficial", "tag": "Meta", "destaque": true, "pontos": ["Autorizada pela Meta", "Número verificado da empresa", "Feita para atendimento automático"]}
+    ], "solucao": "*Resumo:* a oficial tem custo por conversa, mas o número fica seguro."},
+    {"tipo": "item", "numero": "01", "titulo": "Pergunte qual é.", "texto": "Antes de contratar um bot, pergunte se ele usa a API oficial do WhatsApp."},
+    {"tipo": "item", "numero": "02", "titulo": "Confira de quem é a conta.", "texto": "A conta na Meta e o número devem estar no nome da sua empresa.", "solucao": "*Aqui na Elevio:* só API oficial, na sua conta."},
+    {"tipo": "cta", "pre": "Quer automatizar com segurança?", "titulo": "A gente faz *do jeito certo.*", "texto": "Diagnóstico gratuito e sem compromisso.", "botao": "Peça seu diagnóstico →"}
+  ]
+}
