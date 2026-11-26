@@ -1,8 +1,17 @@
 # Dia sim, dia não, alternando carrossel (12h) e reel (19h). Ver cadencia.md.
 # status: rascunho | revisar | aprovado | publicado | erro | descartado
-periodo: 2026-11-23 a 2026-12-06
+# Posts de 21 a 29/11 que não foram aprovados a tempo, remarcados a partir de 30/11.
+periodo: 2026-11-30 a 2026-12-13
 itens:
-  - data: 2026-11-23
+  - data: 2026-11-30
+    hora: "12:00"
+    formato: carrossel
+    pilar: oferta
+    tema: "O que a gente pergunta no diagnóstico gratuito"
+    pasta: posts/carrossel-como-funciona-o-diagnostico
+    status: revisar
+    publicacao: api
+  - data: 2026-12-02
     hora: "19:00"
     formato: reel
     pilar: dor
@@ -10,7 +19,7 @@ itens:
     pasta: posts/reel-origem-do-cliente
     status: revisar
     publicacao: api
-  - data: 2026-11-25
+  - data: 2026-12-04
     hora: "12:00"
     formato: carrossel
     pilar: dor
@@ -18,7 +27,7 @@ itens:
     pasta: posts/carrossel-fora-do-horario
     status: revisar
     publicacao: api
-  - data: 2026-11-27
+  - data: 2026-12-06
     hora: "19:00"
     formato: reel
     pilar: bastidores
@@ -26,7 +35,7 @@ itens:
     pasta: posts/reel-bastidor-automacao
     status: revisar
     publicacao: api
-  - data: 2026-11-29
+  - data: 2026-12-08
     hora: "12:00"
     formato: carrossel
     pilar: educacao
@@ -34,3 +43,13 @@ itens:
     pasta: posts/carrossel-perguntas-repetidas
     status: revisar
     publicacao: api
+  - data: 2026-12-10
+    hora: "19:00"
+    formato: reel
+    pilar: demonstracao
+    tema: "O cliente pediu algo que acabou (loja de exemplo)"
+    pasta: posts/reel-produto-em-falta
+    reserva: posts/carrossel-whatsapp-oficial
+    status: revisar
+    publicacao: api
+    pendencia: "Narração no VoiceStudio do PC"

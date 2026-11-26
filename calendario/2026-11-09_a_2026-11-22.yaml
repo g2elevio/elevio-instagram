@@ -77,5 +77,6 @@ itens:
     pilar: oferta
     tema: O que a gente pergunta no diagnóstico gratuito
     pasta: posts/carrossel-como-funciona-o-diagnostico
-    status: revisar
+    status: descartado
+    motivo: "Não aprovado a tempo; remarcado para 30/11."
     publicacao: api
